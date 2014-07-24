@@ -1,0 +1,168 @@
+{
+  "rock": [
+    "rock"
+  ],
+  "indie": [
+    "indie/alternative"
+  ],
+  "indie rock": [
+    "indie/alternative",
+    "rock"
+  ],
+  "pop": [
+    "pop"
+  ],
+  "electronic": [
+    "electronic"
+  ],
+  "dance": [
+    "electronic"
+  ],
+  "hip hop": [
+    "R&B/Hip-hop"
+  ],
+  "alternative": [
+    "indie/alternative"
+  ],
+  "folk": [
+    "country/folk"
+  ],
+  "rap": [
+    "R&B/Hip-hop"
+  ],
+  "soul": [
+    "R&B/Hip-hop"
+  ],
+  "house": [
+    "electronic"
+  ],
+  "r&b": [
+    "R&B/Hip-hop"
+  ],
+  "punk": [
+    "rock"
+  ],
+  "electro": [
+    "electronic"
+  ],
+  "singer": [
+    "country/folk",
+    "indie/alternative"
+  ],
+  "dubstep": [
+    "electronic"
+  ],
+  "blues": [
+    "other",
+    "rock"
+  ],
+  "electronica": [
+    "electronic"
+  ],
+  "club": [
+    "electronic"
+  ],
+  "funk": [
+    "rock"
+  ],
+  "remix": [
+    "electronic"
+  ],
+  "comedy": [
+    "other"
+  ],
+  "disco": [
+    "rock",
+    "other"
+  ],
+  "garage rock": [
+    "rock"
+  ],
+  "country": [
+    "country/folk"
+  ],
+  "glitch": [
+    "electronic"
+  ],
+  "synthpop": [
+    "pop",
+    "electronic"
+  ],
+  "psychedelic": [
+    "other"
+  ],
+  "folk rock": [
+    "country/folk",
+    "rock"
+  ],
+  "scratch": [
+    "other"
+  ],
+  "roots": [
+    "other"
+  ],
+  "art rock": [
+    "rock",
+    "other"
+  ],
+  "emo": [
+    "rock",
+    "indie/alternative"
+  ],
+  "nu disco": [
+    "electronic"
+  ],
+  "latin": [
+    "other"
+  ],
+  "techno": [
+    "electronic"
+  ],
+  "progressive house": [
+    "electronic"
+  ],
+  "roots rock": [
+    "rock",
+    "other"
+  ],
+  "drum and bass": [
+    "electronic"
+  ],
+  "death metal": [
+    "rock",
+    "other"
+  ],
+  "underground rap": [
+    "R&B/Hip-hop"
+  ],
+  "children music": [
+    "other"
+  ],
+  "trance": [
+    "electronic"
+  ],
+  "southern rock": [
+    "rock",
+    "country/folk"
+  ],
+  "electro house": [
+    "electronic"
+  ],
+  "post": [
+    "rock",
+    "other"
+  ],
+  "reggae": [
+    "other"
+  ],
+  "jazz": [
+    "other"
+  ],
+  "soundtrack": [
+    "other"
+  ],
+  "electropop": [
+    "electronic",
+    "pop"
+  ]
+}
