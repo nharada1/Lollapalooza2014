@@ -22,16 +22,30 @@ class EchonestSupplement:
             self.__last_api_call = time.time()
 
     def get_from_artist(self, _artist):
-        self.__block_until_callable()
+        attributes = {}
+        attributes['hotttnesss'] = 0
+        attributes['familiarity'] = 0
+        attributes['terms'] = None
+
         try:
-            attributes = {}
             curart = artist.Artist(_artist)
 
-            attributes['terms'] = [v['name'] for v in curart.terms[0:5]]
-            attributes['hotttnesss'] = curart.hotttnesss
-            attributes['familiarity'] = curart.familiarity
+            self.__block_until_callable()
+            attributes['terms'] = [v['name'] for v in curart.terms[0:3]]
+            self.__last_api_call = time.time()
 
-            return attributes
-        except util.EchoNestAPIError: 
-            # If the band is hipster enough echonest may not have it
-            return None
+            self.__block_until_callable()
+            attributes['hotttnesss'] = curart.hotttnesss
+            self.__last_api_call = time.time()
+
+            self.__block_until_callable()
+            attributes['familiarity'] = curart.familiarity
+            self.__last_api_call = time.time()
+
+        except util.EchoNestAPIError as e: 
+            # If the band is hipster enough echonest may not have it, but we also
+            # might have somehow hit our rate limit
+            print("Error accessing artist data: {0}".format(e))
+        
+        finally:
+            return attributes 
