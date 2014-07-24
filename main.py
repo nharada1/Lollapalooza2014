@@ -30,8 +30,9 @@ def generate_second_round_data(first_round_data):
     echo = EchonestSupplement(RATE_LIMIT)
     for datum in first_round_data.keys():
         new_attributes = echo.get_from_artist(datum)
-        for attr in new_attributes:
-            first_round_data[datum][attr] = new_attributes[attr]
+        if new_attributes:
+            for attr in new_attributes:
+                first_round_data[datum][attr] = new_attributes[attr]
 
         print(u"Processed round two {0}".format(datum))
 
